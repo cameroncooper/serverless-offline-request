@@ -10,7 +10,9 @@ This node module provides an interface to [Serverless Offline](https://github.co
 
 ### Installation
 
-`npm install serverless-offline-request`
+```
+npm install serverless-offline-request
+```
 
 ### Usage
 
@@ -39,7 +41,7 @@ var request = require('serverless-offline-request');
 var expect = require('chai').expect;
 
 describe('function1', function() {
-  it('response to get requests', function(done) {
+  it('responds to get requests', function(done) {
     request.get('/function1', (res) => {
       expect(res.result.message).to.equal('Go Serverless! Your Lambda function executed successfully!');
       done();
